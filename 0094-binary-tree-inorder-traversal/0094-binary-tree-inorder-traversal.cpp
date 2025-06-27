@@ -23,6 +23,7 @@ public:
             }
             curr = stk.top();
             stk.pop();
+            res.push_back(curr->val);
             curr = curr->right;
         }
         return res;
